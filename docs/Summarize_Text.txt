@@ -1,0 +1,15 @@
+/*
+Summary of LangChain Summarization Tutorial:
+
+The LangChain Summarization tutorial demonstrates how to use LangChain to summarize long documents using Large Language Models (LLMs). It covers two main approaches: "stuff" and "map-reduce". 
+
+- The "stuff" method concatenates all document chunks and sends them to the LLM in a single prompt. This is simple but limited by the model's context window.
+- The "map-reduce" method first summarizes each chunk individually ("map" step), then combines those summaries and summarizes them again ("reduce" step). This allows summarizing much longer documents by breaking them into manageable pieces.
+
+The tutorial provides code examples for both approaches, using LangChain's `load_summarize_chain` utility and a language model like OpenAI's GPT. It also discusses how to customize prompts and chain types, and how to use document loaders and text splitters to prepare input data.
+
+Key takeaways:
+- Use "stuff" for short documents that fit in the LLM's context window.
+- Use "map-reduce" for longer documents to avoid context length limitations.
+- LangChain makes it easy to build, customize, and run summarization pipelines with minimal code.
+*/
